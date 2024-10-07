@@ -4,20 +4,19 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css" />
-        <script src="./index.js"></script>
+        <script src="./index.js" defer></script>
         <title>Library</title>
     </head>
     <body>
         <h1 class="page-heading">JR's Library</h1>
         <button class="new-book button-style" id="new-book">New Book</button>
-        <div class="card-layout">
-            <div class="card">
-                <h2 class="card-heading" id="title">Atomic Habits</h2>
-                <p class="card-content" id="author">Author: James Clear</p>
-                <p class="card-content" id="pages">Pages: 250</p>
-                <p class="card-content" id="read-status">Read Status: Read</p>
-                <button class="button-style" id="toggle">Toggle Read Status</button><button class="button-style" id="delete">Delete Book</button>
-            </div>
+        <div class="card-layout"></div>
+        <div class="card hidden-card" id="template">
+            <h2 class="card-heading" id="title"></h2>
+            <p class="card-content" id="author"></p>
+            <p class="card-content" id="pages"></p>
+            <p class="card-content" id="read-status"></p>
+            <button class="button-style" id="toggle">Toggle Read Status</button><button class="button-style" id="delete">Delete Book</button>
         </div>
     </body>
 </html>

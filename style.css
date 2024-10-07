@@ -78,6 +78,13 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     transition: all 0.2s;
+    gap: 15px;
+}
+
+.hidden-card {
+    visibility: hidden;
+    max-height: 0px;
+    max-width: 0px;
 }
 
 .card {
@@ -94,12 +101,17 @@ body {
 
 .card-heading {
     justify-self: center;
+    align-self: center;
+    text-align: center;
     border-bottom: solid 2px black;
     margin-bottom: 20px;
     grid-column: span 2;
 }
 
 .card-content {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
     margin-left: 20px;
     margin-right: 20px;
 }
