@@ -8,6 +8,22 @@
         <title>Library</title>
     </head>
     <body>
+        <dialog id="book-dialog">
+            <form id="dialog-form">
+                <h2 style="text-align: center">New Book</h2>
+                <div class="input-wrapper"><label for="title">Title</label><input class="input-styles" type="text" id="title" /></div>
+                <div class="input-wrapper"><label for="author">Author</label><input class="input-styles" type="text" id="author" /></div>
+                <div class="input-wrapper"><label for="pages">Pages</label><input class="input-styles" type="number" id="pages" /></div>
+                <div class="input-wrapper">
+                    <label for="read-toggle">Read Status</label
+                    ><select class="input-styles" id="read-status">
+                        <option value="read">Read</option>
+                        <option value="not-read">Not Read</option>
+                    </select>
+                </div>
+                <button class="button-style" id="add-book">Add Book</button>
+            </form>
+        </dialog>
         <h1 class="page-heading">JR's Library</h1>
         <button class="new-book button-style" id="new-book">New Book</button>
         <div class="card-layout"></div>

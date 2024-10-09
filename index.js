@@ -31,9 +31,11 @@ function displayBooks(layout, library) {
     }
 }
 
+const addBookBtn = document.querySelector("#new-book");
 const cardLayout = document.querySelector(".card-layout");
-
 const templateCard = document.querySelector("#template");
+
+addBookBtn.addEventListener("click", (event) => {});
 
 addBook("Atomic Habits", "James Clear", 100, false);
 addBook("Winning the War in Your Mind", "Craig Groeshel", 200, true);
