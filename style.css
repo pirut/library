@@ -121,7 +121,7 @@ body {
 .card-layout {
     grid-column: span 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350gpx, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     transition: all 0.2s;
     gap: 15px;
 }
