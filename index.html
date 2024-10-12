@@ -11,9 +11,15 @@
         <dialog id="book-dialog">
             <form id="dialog-form">
                 <h2 style="text-align: center">New Book</h2>
-                <div class="input-wrapper"><label for="input-title">Title</label><input class="input-styles" type="text" id="input-title" /></div>
-                <div class="input-wrapper"><label for="input-author">Author</label><input class="input-styles" type="text" id="input-author" /></div>
-                <div class="input-wrapper"><label for="input-pages">Pages</label><input class="input-styles" type="number" id="input-pages" /></div>
+                <div class="input-wrapper">
+                    <label for="input-title">Title</label><input class="input-styles" type="text" id="input-title" minlength="2" maxlength="35" required />
+                </div>
+                <div class="input-wrapper">
+                    <label for="input-author">Author</label><input class="input-styles" type="text" id="input-author" minlength="2" maxlength="35" required />
+                </div>
+                <div class="input-wrapper">
+                    <label for="input-pages">Pages</label><input class="input-styles" type="number" id="input-pages" min="1" max="99999" />
+                </div>
                 <div class="input-wrapper">
                     <label for="input-read-status">Read Status</label
                     ><select class="input-styles" id="input-read-status">
@@ -29,6 +35,8 @@
         <div class="card-layout"></div>
         <div class="card hidden-card" id="template">
             <h2 class="card-heading" id="title"></h2>
+            <h3 class="card-desc">Author</h3>
+            <h3 class="card-desc">Pages in Book</h3>
             <p class="card-content" id="author"></p>
             <p class="card-content" id="pages"></p>
             <p class="card-content" id="read-status"></p>
