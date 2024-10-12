@@ -79,6 +79,10 @@ body {
     border-top-right-radius: 15px 225px;
 }
 
+#book-dialog::backdrop {
+    backdrop-filter: blur(10px);
+}
+
 #dialog-form {
     display: flex;
     flex-direction: column;
